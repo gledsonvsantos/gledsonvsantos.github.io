@@ -64,4 +64,4 @@ coverage/
 /images/*
 !images/*.jpeg
 
-.claude/
+.claude/session-ses_4b83.md

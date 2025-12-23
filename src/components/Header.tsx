@@ -4,7 +4,7 @@ export default function Header() {
       <div className="flex flex-col gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight text-white">
-            Gledson
+            Gledson Vicente Santos
           </h1>
           <p className="text-lg text-zinc-300 font-medium">
             Backend & Cloud Engineer
@@ -17,7 +17,7 @@ export default function Header() {
         <nav className="flex gap-5 text-sm font-medium mt-2">
           <a 
             className="text-zinc-400 hover:text-white transition-colors underline underline-offset-4 decoration-zinc-700 hover:decoration-white" 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/gledson-vicente" 
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,17 +25,11 @@ export default function Header() {
           </a>
           <a 
             className="text-zinc-400 hover:text-white transition-colors underline underline-offset-4 decoration-zinc-700 hover:decoration-white" 
-            href="https://github.com" 
+            href="https://github.com/gledsonvsantos" 
             target="_blank"
             rel="noopener noreferrer"
           >
             GitHub
-          </a>
-          <a 
-            className="text-zinc-400 hover:text-white transition-colors underline underline-offset-4 decoration-zinc-700 hover:decoration-white" 
-            href="/cv.pdf"
-          >
-            CV
           </a>
         </nav>
       </div>

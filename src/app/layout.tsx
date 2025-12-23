@@ -1,3 +1,4 @@
+import { LanguageProvider } from '@/contexts/LanguageContext';
 import '../styles/globals.css';
 
 export const metadata = {
@@ -12,7 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   );
 }

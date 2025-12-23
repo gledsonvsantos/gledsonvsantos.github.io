@@ -1,17 +1,21 @@
+'use client';
+
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function About() {
+  const { t } = useLanguage();
+
   return (
     <section className="mx-auto max-w-2xl px-6 py-6">
       <h2 className="mb-3 text-sm font-semibold text-zinc-200">
-        About
+        {t.about.title}
       </h2>
       <div className="space-y-3 text-base leading-relaxed text-zinc-400">
         <p>
-          I am a backend developer passionate about building robust and scalable systems. 
-          Deep expertise in AWS cloud architecture and high-performance solution development.
+          {t.about.p1}
         </p>
         <p>
-          My main focus is solving complex engineering problems, optimizing infrastructure costs, 
-          and ensuring critical applications run reliably at scale.
+          {t.about.p2}
         </p>
       </div>
     </section>

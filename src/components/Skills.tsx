@@ -1,15 +1,21 @@
+'use client';
+
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function Skills() {
+  const { t } = useLanguage();
+
   const skills = [
-    { category: "Languages", items: ["Java", "Python", "Kotlin", "TypeScript"] },
-    { category: "Stack", items: ["Spring Boot", "Quarkus", "Next.js", "FastAPI"] },
-    { category: "Cloud", items: ["AWS Lambda", "ECS", "SQS", "Kinesis", "Terraform"] },
-    { category: "Data", items: ["PostgreSQL", "DynamoDB", "Redis", "MongoDB"] },
+    { category: t.skills.categories.languages, items: ["Java", "Python", "Kotlin", "TypeScript"] },
+    { category: t.skills.categories.stack, items: ["Spring Boot", "Quarkus", "Next.js", "FastAPI"] },
+    { category: t.skills.categories.cloud, items: ["AWS Lambda", "ECS", "SQS", "Kinesis", "Terraform"] },
+    { category: t.skills.categories.data, items: ["PostgreSQL", "DynamoDB", "Redis", "MongoDB"] },
   ];
 
   return (
     <section className="mx-auto max-w-2xl px-6 py-6">
       <h2 className="mb-4 text-sm font-semibold text-zinc-200">
-        Tech Stack
+        {t.skills.title}
       </h2>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {skills.map((skillGroup) => (

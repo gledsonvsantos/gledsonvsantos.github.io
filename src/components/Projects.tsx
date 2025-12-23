@@ -1,14 +1,20 @@
+'use client';
+
+import { useLanguage } from '@/contexts/LanguageContext';
+
 export default function Projects() {
+  const { t } = useLanguage();
+
   const projects = [
     {
-      title: "Server-Side Analytics",
-      description: "High-performance analytics platform capable of processing millions of events daily with minimal latency.",
+      title: t.projects.items[0].title,
+      description: t.projects.items[0].description,
       tech: ["Java", "Spring Boot", "AWS Kinesis", "Redshift"],
       link: "#"
     },
     {
-      title: "Distributed Event Pipeline",
-      description: "Event-driven architecture for real-time financial transaction processing, ensuring consistency and scalability.",
+      title: t.projects.items[1].title,
+      description: t.projects.items[1].description,
       tech: ["Kotlin", "Kafka", "AWS Lambda", "DynamoDB"],
       link: "#"
     }
@@ -17,7 +23,7 @@ export default function Projects() {
   return (
     <section className="mx-auto max-w-2xl px-6 py-6">
       <h2 className="mb-6 text-sm font-semibold text-zinc-200">
-        Selected Projects
+        {t.projects.title}
       </h2>
       <div className="space-y-8">
         {projects.map((project) => (

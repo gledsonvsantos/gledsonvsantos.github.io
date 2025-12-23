@@ -65,3 +65,4 @@ coverage/
 !images/*.jpeg
 
 .claude/session-ses_4b83.md
+.claude/
